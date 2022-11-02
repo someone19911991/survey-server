@@ -4,8 +4,8 @@ const cors = require("cors");
 const app = express();
 const routing = require('./routing/index');
 const errorMiddleware = require("./middlewares/error.middleware");
-const {port, frontUrl} = process.env || 5000;
-
+const {port } = process.env || 5000;
+const {frontUrl} = process.env
 // app.use(express.json());
 // app.use(cors({ origin: "*" }));
 
