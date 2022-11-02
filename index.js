@@ -6,10 +6,10 @@ const routing = require('./routing/index');
 const errorMiddleware = require("./middlewares/error.middleware");
 const {port, frontUrl} = process.env || 5000;
 
-app.use(express.json());
-app.use(cors({ origin: "*" }));
+// app.use(express.json());
+// app.use(cors({ origin: "*" }));
 
-app.use('/api', routing);
+// app.use('/api', routing);
 app.get('/', (req, res) => {
     res.send('Hi everyone');
 });
