@@ -10,6 +10,9 @@ app.use(express.json());
 app.use(cors({ origin: frontUrl }));
 
 app.use('/api', routing);
+app.get('/', (req, res) => {
+    res.send('Hi everyone');
+});
 
 app.use(errorMiddleware);
 
