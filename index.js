@@ -3,7 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 const routing = require('./routing/index');
-// const errorMiddleware = require("./middlewares/error.middleware");
+const errorMiddleware = require("./middlewares/error.middleware");
 const {port } = process.env || 5000;
 const {frontUrl} = process.env
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use('/api', routing);
 //     res.send('Hi everyone');
 // });
 //
-// app.use(errorMiddleware);
+app.use(errorMiddleware);
 //
 // app.listen(port, () => console.log(`App running on port ${port}`));
 
