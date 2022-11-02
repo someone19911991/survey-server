@@ -1,0 +1,25 @@
+{
+  "name": "survey_application",
+  "version": "1.0.0",
+  "description": "Survey test task",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "survey",
+    "survey task"
+  ],
+  "author": "Garik Melkonyan <garik.melkonyan1991@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "googleapis": "^109.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
